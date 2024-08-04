@@ -1,0 +1,35 @@
+.aboutText, .educationText, .skillsText, .expText, .langText {
+    color: var(--main-text) !important;
+}
+.expBlockTitle{
+    color: var(--main-text) !important;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 0 0 20px 5px;
+}
+.educationTextTitle{
+    color: var(--main-text) !important;
+    font-weight: bold;
+    font-size: 16px;
+}
+.blockHeader{
+    padding: 20px 0 0 0;
+}
+
+.aboutCard, .educationCard, .footerCard, .languagesCard, .experienceCard, .headerCvComponent, .skillsCard {
+    background-color: var(--second-background) !important;
+}
+
+.skillsCard .ant-card-head-title {
+    color: var(--main-text) !important;
+}
+.skillsCard .ant-timeline-item-content {
+    color: var(--main-text) !important;
+}
+
+.languagesCard .ant-card-head-title {
+    color: var(--main-text) !important;
+}
+.experienceCard .ant-card-head-title {
+    color: var(--main-text) !important;
+}
