@@ -7,13 +7,14 @@ const { Footer: AntFooter } = Layout;
 const { Text } = Typography;
 
 const Footer: React.FC = () => {
-  const { t } = useTranslation();
+    const { t } = useTranslation();
+    const currentYear = new Date().getFullYear();
 
-  return (
-    <AntFooter className="footerContainer">
-      <Text className="footerCopyright">© 2004–2024 {t('name')}</Text>
-    </AntFooter>
-  );
+    return (
+        <AntFooter className="footerContainer">
+            <Text className="footerCopyright">© 2004–{currentYear} {t('name')}</Text>
+        </AntFooter>
+    );
 };
 
 export default Footer;
