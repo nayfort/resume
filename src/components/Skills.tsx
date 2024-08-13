@@ -5,6 +5,7 @@ const Skills = () => {
   const skills = [
     'HTML, CSS, Scss, Sass',
     'Bootstrap 5',
+    'Tailwind CSS',
     'JavaScript/TypeScript',
     'React, React Native + Redux Tool Kit',
     'MobX',

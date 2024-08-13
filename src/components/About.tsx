@@ -23,12 +23,16 @@ const About = () => {
           <Text className='aboutText'>mitrofanovvladislav2004@gmail.com</Text>
         </div>
         <div className='contactsElement'>
+          <Text className='aboutText'>{t('LinkedIn')}:</Text>
+          <Link href="https://linkedin.com/in/nayfort" target="_blank" className='aboutText'>nayfort</Link>
+        </div>
+        <div className='contactsElement'>
           <Text className='aboutText'>{t('telegram')}:</Text>
-          <Link href="https://t.me/nayfort" target="_blank" className='aboutText'>https://t.me/nayfort</Link>
+          <Link href="https://t.me/nayfort" target="_blank" className='aboutText'>nayfort</Link>
         </div>
         <div className='contactsElement'>
           <Text className='aboutText'>{t('portfolio')}:</Text>
-          <Link href="https://github.com/nayfort" target="_blank" className='aboutText'>https://github.com/nayfort</Link>
+          <Link href="https://github.com/nayfort" target="_blank" className='aboutText'>github.com/nayfort</Link>
         </div>
       </Space>
     </Card>

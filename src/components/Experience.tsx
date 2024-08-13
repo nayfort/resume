@@ -14,7 +14,7 @@ const Experience = () => {
 
   const nerdLabResponsibilities = [
     'Development and optimization of web pages and web applications',
-    'Working with third-party libraries and frameworks (e.g., React, Angular, Vue.js)',
+    'Working with third-party libraries and frameworks (e.g., React)',
     'Use of backend technologies such as Node.js',
     'Working with databases such as MySQL and MongoDB',
     'Parallel development of functional components',
