@@ -11,7 +11,7 @@ const Skills = () => {
     'MobX',
     'Node.js, API',
     'Postman',
-    'Git/GitHub',
+    'Git/GitHub, GitLab',
     'Docker',
     'i18n',
     'Flutter, Dart',
