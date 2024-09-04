@@ -1,6 +1,9 @@
 .aboutText, .educationText, .skillsText, .expText, .langText {
     color: var(--main-text) !important;
 }
+.profileLinks{
+    text-decoration: underline !important;
+}
 .expBlockTitle{
     color: var(--main-text) !important;
     font-weight: bold;
