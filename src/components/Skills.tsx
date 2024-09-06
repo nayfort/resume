@@ -9,6 +9,7 @@ const Skills = () => {
     'React, Next.js',
     'Redux + Redux Tool Kit, MobX',
     'React Native, Flutter, Dart',
+    'Angular',
     'Node.js, API',
     'MongoDB, PostgreSQL, DBeaver',
     'Postman, Swagger',
