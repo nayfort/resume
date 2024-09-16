@@ -21,7 +21,8 @@ const Resume: React.FC = () => {
             <Col>
               <Title level={3} className='headerTextElement'>{t('hello-world')}</Title>
               <Title level={4} className='headerTextElement'>{t('me')}</Title>
-              <Title level={5} className='headerTextElement'>{t('frontend-dev')}</Title>
+              <Title level={4} className='headerTextElement'>{t('frontend-dev')}</Title>
+              <Title level={5} className='headerTextElement'>{t('location')}</Title>
             </Col>
           </Row>
         </Card>
