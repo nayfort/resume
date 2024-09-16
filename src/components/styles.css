@@ -3,6 +3,7 @@
 }
 .profileLinks{
     text-decoration: underline !important;
+    color: var(--main-text) !important;
 }
 .expBlockTitle{
     color: var(--main-text) !important;
