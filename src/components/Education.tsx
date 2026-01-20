@@ -21,9 +21,6 @@ const Education = () => {
           <div className='educationText'>STEP: IT Academy</div>
           <ul>
             <li className='educationText'>Website design and layout</li>
-            <li className='educationText'>2D game modeling (Construct2)</li>
-            <li className='educationText'>3D modeling (Blender)</li>
-            <li className='educationText'>Video editing (Premiere Pro)</li>
             <li className='educationText'>HTML / CSS course</li>
             <li className='educationText'>JavaScript course</li>
             <li className='educationText'>Python course</li>

@@ -3,19 +3,17 @@ import './styles.css';
 
 const Skills = () => {
   const skills = [
-    'HTML, CSS, Scss, Sass',
-    'Bootstrap 5, Tailwind CSS',
+    'HTML5, CSS3 (SCSS)',
+    'Tailwind CSS',
     'JavaScript, TypeScript',
     'React, Next.js',
-    'Redux + Redux Tool Kit, MobX',
-    'React Native, Flutter, Dart',
-    'Node.js, API',
-    'MongoDB, PostgreSQL, DBeaver',
-    'Postman, Swagger',
-    'Git/GitHub, GitLab',
+    'Redux + Redux Tool Kit',
+    'React Native, Flutter',
+    'Node.js',
+    'MongoDB, PostgreSQL',
+    'Git/GitHub',
     'Docker',
-    'i18n',
-    'Figma, Pixso',
+    'Figma',
   ];
 
   return (
