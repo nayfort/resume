@@ -2,9 +2,6 @@
 
 This is my Desktop and Mobile Resume.
 
-<img src="./src/assets/screenDesktop.png" alt="Desktop Screenshot" width="500"/>
-<img src="./src/assets/screenMobile.png" alt="Mobile Screenshot" width="200"/>
-
 ## How to start:
 
 1. **Clone the repository:**
