@@ -6,7 +6,7 @@ const Experience = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="experienceSection">
+    <div className="experienceSection" id="experience">
       <div className="expBlockTitle">{t('experience')}:</div>
 
       <Card title="BetTV (July 2023 / July 2024 - Junior Frontend Developer)" className='experienceCard'>

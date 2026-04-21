@@ -34,3 +34,8 @@ body {
   height: 100%;
   margin: 0 !important;
 }
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 10%;
+}

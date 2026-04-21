@@ -5,6 +5,10 @@
     text-decoration: underline !important;
     color: var(--main-text) !important;
 }
+.educationLinks{
+    text-decoration: underline !important;
+    color: var(--main-text) !important;
+}
 .expBlockTitle{
     color: var(--main-text) !important;
     font-weight: bold;

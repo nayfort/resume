@@ -13,7 +13,7 @@ const Resume: React.FC = () => {
   return (
     <div className='mainContainer'>
       <div className='contentContainer'>
-        <Card className='headerCvComponent'>
+        <Card className='headerCvComponent' id="hero">
           <Row gutter={[16, 16]} align="middle">
             <Col>
               <img src={Photo} alt="photo" className='cvLogo' />
