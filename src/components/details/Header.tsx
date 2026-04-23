@@ -25,7 +25,7 @@ const Header: React.FC = () => {
                     <img src={en} alt="English" className="changeButton" /> English
                 </div>
             </Menu.Item>
-            <Menu.Item key="uk" onClick={() => changeLanguage('uk')}>
+            <Menu.Item key="uk" onClick={() => changeLanguage('ua')}>
                 <div className='langElTitle'>
                     <img src={uk} alt="Ukrainian" className="changeButton" /> Українська
                 </div>

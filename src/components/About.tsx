@@ -8,7 +8,7 @@ const About = () => {
   const { t } = useTranslation();
 
   return (
-    <Card className='aboutCard'>
+    <Card title={t('contacts')} className='aboutCard'>
       <Space direction="vertical" size="middle" style={{ display: 'flex' }}>
         <div className='contactsElement'>
           <Text className='aboutText'>{t('date-of-birth')}:</Text>

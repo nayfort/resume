@@ -38,6 +38,12 @@
 .languagesCard .ant-card-head-title {
     color: var(--main-text) !important;
 }
+.aboutCard .ant-card-head-title {
+    color: var(--main-text) !important;
+}
+.educationCard .ant-card-head-title {
+    color: var(--main-text) !important;
+}
 .experienceCard .ant-card-head-title {
     color: var(--main-text) !important;
 }

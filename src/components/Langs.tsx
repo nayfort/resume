@@ -6,9 +6,9 @@ const Langs = () => {
   const { t } = useTranslation();
 
   const languages = [
-    'Ukrainian - Native',
     'English - Upper-Intermediate',
-    'Polish - Beginner',
+    'Ukrainian - Native',
+    'Polish - Beginner'
   ];
 
   return (
