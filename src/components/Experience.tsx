@@ -9,6 +9,33 @@ const Experience = () => {
     <div className="experienceSection" id="experience">
       <div className="expBlockTitle">{t('experience')}:</div>
 
+      <Card title="TapOk (December 2024 / June 2026 - Frontend Developer)" className='experienceCard'>
+        <p className="expText">
+          <b>Responsibilities & Contributions:</b>
+          <br/>
+          • Developed and maintained internal scripts
+          <br/>
+          • Designed and refined prompts for AI-powered tools and workflows
+          <br/>
+          • Built and maintained workflows using n8n
+          <br/>
+          • Contributed to AI initiatives by exploring and implementing practical AI solutions
+        </p>
+        <p className="expText">
+          <b>Product Scope:</b>
+          <br/>
+          • Script Development
+          <br/>
+          • Prompt Engineering
+          <br/>
+          • n8n Workflows
+          <br/>
+          • AI Solutions Research & Implementation
+        </p>
+      </Card>
+
+      <Divider />
+
       <Card title="BetTV (July 2023 / July 2024 - Frontend Developer)" className='experienceCard'>
         <p className="expText">
           <b>Responsibilities & Contributions:</b>
