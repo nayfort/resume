@@ -7,8 +7,8 @@ const Langs = () => {
 
   const languages = [
     'English - Upper-Intermediate',
-    'Ukrainian - Native',
-    'Polish - Beginner'
+    'Polish - Beginner',
+    'Ukrainian - Native'
   ];
 
   return (

@@ -13,24 +13,14 @@ const Experience = () => {
         <p className="expText">
           <b>Responsibilities & Contributions:</b>
           <br/>
-          • Developed and maintained internal scripts
           <br/>
-          • Designed and refined prompts for AI-powered tools and workflows
+          • Developed and maintained internal scripts.
           <br/>
-          • Built and maintained workflows using n8n
+          • Designed and refined prompts for AI-powered tools and workflows.
           <br/>
-          • Contributed to AI initiatives by exploring and implementing practical AI solutions
-        </p>
-        <p className="expText">
-          <b>Product Scope:</b>
+          • Built and maintained workflows using n8n.
           <br/>
-          • Script Development
-          <br/>
-          • Prompt Engineering
-          <br/>
-          • n8n Workflows
-          <br/>
-          • AI Solutions Research & Implementation
+          • Contributed to AI initiatives by exploring and implementing practical AI solutions.
         </p>
       </Card>
 
@@ -40,32 +30,16 @@ const Experience = () => {
         <p className="expText">
           <b>Responsibilities & Contributions:</b>
           <br/>
-          • Developed and maintained a large-scale web platform for online betting
           <br/>
-          • Implemented custom frontend functionality using React
+          • Developed and maintained a large-scale betting platform using React.
           <br/>
-          • Integrated REST APIs and handled dynamic data flows
+          • Built reusable UI components and responsive page layouts.
           <br/>
-          • Implemented internationalization (i18n)
+          • Integrated REST APIs and handled dynamic client-side data.
           <br/>
-          • Built page layouts and reusable UI components from scratch
+          • Implemented internationalization (i18n).
           <br/>
-          • Participated in development of both client-facing and admin panel interfaces
-          <br/>
-          • Collaborated with backend developers and designers
-        </p>
-        <p className="expText">
-          <b>Product Scope:</b>
-          <br/>
-          • Client application
-          <br/>
-          • Admin panel
-          <br/>
-          • Betting zone
-          <br/>
-          • Affiliate program
-          <br/>
-          • Streaming (Bet TV) module
+          • Collaborated with backend developers and designers.
         </p>
       </Card>
 
@@ -75,22 +49,21 @@ const Experience = () => {
         <p className="expText">
           <b>Responsibilities & Contributions:</b>
           <br/>
-          • Refactored and updated existing React Native applications
           <br/>
-          • Migrated projects to newer library versions and updated UI designs
+          • Modernized legacy React Native applications through refactoring and dependency upgrades.
           <br/>
-          • Prepared and published application updates to the App Store
+          • Delivered UI improvements and resolved compatibility issues.
           <br/>
-          • Worked with Xcode and iOS build configurations
+          • Managed iOS builds and production releases via Xcode and App Store Connect.
           <br/>
-          • Maintained and improved existing codebases
+          • Maintained and enhanced existing mobile applications.
         </p>
         <p className="expText">
-          • Knots 3D — mobile application refactoring and UI updates
+          • Knots 3D – Refactoring, UI modernization, dependency updates.
           <br/>
-          • VPN App — library updates and App Store releases
+          • VPN App – Library migration, iOS releases, App Store deployment.
           <br/>
-          • Finance Calculator — design updates and maintenance
+          • Finance Calculator – UI improvements, maintenance, bug fixes.
         </p>
       </Card>
 
@@ -100,47 +73,65 @@ const Experience = () => {
         <p className="expText">
           <b>Responsibilities & Contributions:</b>
           <br/>
-          • Developed and maintained web applications using React and TypeScript
           <br/>
-          • Implemented UI components (tables, forms, dropdowns, buttons)
+          • Developed and maintained React and TypeScript web applications.
           <br/>
-          • Integrated frontend with backend services (Node.js APIs)
+          • Built reusable UI components and integrated REST APIs.
           <br/>
-          • Worked with MongoDB and MySQL data sources
+          • Worked with MongoDB and MySQL databases.
           <br/>
-          • Participated in optimization and support of existing projects
+          • Improved existing features through optimization and refactoring.
           <br/>
-          • Collaborated closely with a mentor and development team
+          • Collaborated with senior developers on feature delivery.
         </p>
         <p className="expText">
           <b>Projects:</b>
           <br/>
           • NerdLab Zeus — Admin panel for managing and viewing 3D assets
           <br/>
-          Stack: React, TypeScript
           <br/>
-          Contribution: UI components, forms, tables, settings panels
+          Highlights:
+          • Developed reusable UI components for the admin panel.
+          <br/>
+          • Implemented forms, tables, and settings pages.
+          <br/>
+          • Collaborated with backend developers to integrate APIs.
           <br/>
           <br/>
           • Synergy Hub — Full-stack application
           <br/>
-          Stack: Node.js, TypeORM, Docker
           <br/>
-          Contribution: backend integration, parallel development with senior developer
+          Highlights:
+          <br/>
+          • Integrated backend services using Node.js and TypeORM.
+          <br/>
+          • Implemented REST API endpoints and business logic.
+          <br/>
+          • Collaborated with senior developers on architecture and feature delivery.
           <br/>
           <br/>
           • BetHead — Sports betting frontend
           <br/>
-          Stack: React
           <br/>
-          Contribution: customization of interactive and graphical UI components
+          Highlights:
+          <br/>
+          • Customized interactive UI components for the betting platform.
+          <br/>
+          • Implemented responsive layouts and graphical interface elements.
+          <br/>
+          • Improved usability and consistency across application screens.
           <br/>
           <br/>
           • Truck Loading — Mobile calculator app
           <br/>
-          Stack: React Native
           <br/>
-          Contribution: implementation of calculation logic and UI
+          Highlights:
+          <br/>
+          • Implemented calculation algorithms for truck loading scenarios.
+          <br/>
+          • Developed responsive mobile UI using React Native.
+          <br/>
+          • Integrated business logic with user-friendly input forms.
         </p>
       </Card>
     </div>

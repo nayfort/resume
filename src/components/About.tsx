@@ -11,14 +11,6 @@ const About = () => {
     <Card title={t('contacts')} className='aboutCard'>
       <Space direction="vertical" size="middle" style={{ display: 'flex' }}>
         <div className='contactsElement'>
-          <Text className='aboutText'>{t('date-of-birth')}:</Text>
-          <Text className='aboutText'>26.07.2004</Text>
-        </div>
-        <div className='contactsElement'>
-          <Text className='aboutText'>{t('tel')}:</Text>
-          <Text className='aboutText'>+380 67 539 85 17</Text>
-        </div>
-        <div className='contactsElement'>
           <Text className='aboutText'>{t('email')}:</Text>
           <Text className='aboutText'>mitrofanovvladislav2004@gmail.com</Text>
         </div>
@@ -31,7 +23,7 @@ const About = () => {
           <Link href="https://t.me/nayfort" target="_blank" className='aboutText'><a className='profileLinks'>nayfort</a></Link>
         </div>
         <div className='contactsElement'>
-          <Text className='aboutText'>{t('portfolio')}:</Text>
+          <Text className='aboutText'>{t('git')}:</Text>
           <Link href="https://github.com/nayfort" target="_blank" className='aboutText'><a className='profileLinks'>nayfort</a></Link>
         </div>
       </Space>

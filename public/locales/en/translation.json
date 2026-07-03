@@ -4,9 +4,10 @@
   "tel": "Tel",
   "email": "E-mail",
   "telegram": "Telegram",
-  "portfolio": "Portfolio",
+  "git": "GitHub",
   "name": "Vladyslav Mytrofanov",
   "me": "I'm Vladyslav Mytrofanov",
+  "introduce": "Frontend Developer with 3+ years of commercial experience delivering product-focused web applications. Specialized in React, Next.js, and TypeScript, with hands-on experience building scalable interfaces, integrating APIs, and improving user experience. Comfortable taking ownership of features from idea to production, collaborating closely with designers and engineers. Recently focused on AI-powered workflows, automation, and internal tooling using n8n and modern LLMs.",
   "about": "About",
   "theme": "Theme",
   "hello-world": "<Hello, World!>",
@@ -17,6 +18,5 @@
   "education": "Education",
   "plus-education": "Additional education",
   "lang": "Language",
-  "languages": "Languages",
-  "greeting": "Looking forward to working with you 🖖"
+  "languages": "Languages"
 }

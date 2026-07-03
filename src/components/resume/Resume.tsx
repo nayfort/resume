@@ -3,9 +3,9 @@ import Photo from '../../assets/photo.png';
 import { About, Skills, Experience, Education, Langs } from '../index.tsx';
 import './styles.css';
 import { useTranslation } from 'react-i18next';
-import { Card, Row, Col, Typography, Divider } from 'antd';
+import { Card, Row, Col, Typography } from 'antd';
 
-const { Title, Text } = Typography;
+const { Title } = Typography;
 
 const Resume: React.FC = () => {
   const { t } = useTranslation();
@@ -19,8 +19,9 @@ const Resume: React.FC = () => {
               <img src={Photo} alt="photo" className='cvLogo' />
             </Col>
             <Col>
-              <Title level={3} className='headerTextElement'>{t('hello-world')}</Title>
-              <Title level={4} className='headerTextElement'>{t('me')}</Title>
+              <Title level={4} className='headerTextElement'>{t('hello-world')}</Title>
+              <Title level={3} className='headerTextElement'>{t('me')}</Title>
+              <Title level={5} className='headerTextElement'>{t('introduce')}</Title>
               <Title level={4} className='headerTextElement'>{t('frontend-dev')}</Title>
               <Title level={5} className='headerTextElement'>{t('location')}</Title>
             </Col>
@@ -32,10 +33,6 @@ const Resume: React.FC = () => {
         <Experience />
         <Education />
         <Langs />
-
-        <Divider />
-
-        <Text className='footerTextElement'>{t('greeting')}</Text>
       </div>
     </div>
   );
