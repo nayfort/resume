@@ -9,7 +9,7 @@ const Experience = () => {
     <div className="experienceSection" id="experience">
       <div className="expBlockTitle">{t('experience')}:</div>
 
-      <Card title="TapOk (December 2024 / June 2026 - Frontend Developer)" className='experienceCard'>
+      <Card title="TapOk (December 2024 - June 2026 — Frontend Developer)" className='experienceCard'>
         <p className="expText">
           <b>Responsibilities & Contributions:</b>
           <br/>
@@ -26,7 +26,7 @@ const Experience = () => {
 
       <Divider />
 
-      <Card title="BetTV (July 2023 / July 2024 - Frontend Developer)" className='experienceCard'>
+      <Card title="BetTV (July 2023 - July 2024 — Frontend Developer)" className='experienceCard'>
         <p className="expText">
           <b>Responsibilities & Contributions:</b>
           <br/>
@@ -45,7 +45,7 @@ const Experience = () => {
 
       <Divider />
 
-      <Card title="Qulisoft (March 2023 / July 2023 - React Native Developer)" className='experienceCard'>
+      <Card title="Qulisoft (March 2023 - July 2023 — React Native Developer)" className='experienceCard'>
         <p className="expText">
           <b>Responsibilities & Contributions:</b>
           <br/>
@@ -69,7 +69,7 @@ const Experience = () => {
 
       <Divider />
 
-      <Card title="NerdLab (March 2022 / July 2023 - Frontend Developer)" className='experienceCard'>
+      <Card title="NerdLab (March 2022 - July 2023 — Frontend Developer)" className='experienceCard'>
         <p className="expText">
           <b>Responsibilities & Contributions:</b>
           <br/>

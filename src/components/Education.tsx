@@ -10,7 +10,7 @@ const Education = () => {
   return (
     <div>
       <Card title={t('education')} className='educationCard'>
-        <div className='educationText'>(2023 / 2027 - Expected, flexible academic schedule)</div>
+        <div className='educationText'>(2023 - 2027 — Expected, flexible academic schedule)</div>
         <div className='blockHeader'>
           <Link href="https://www.kpi.kharkov.ua/eng/" target="_blank" className='educationText'><a className='educationLinks'>Kharkiv Polytechnic Institute</a></Link>
           <div className='educationText'>SOFTWARE ENGINEERING OF COMPUTER SYSTEMS</div>

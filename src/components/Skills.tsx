@@ -3,10 +3,11 @@ import './styles.css';
 
 const Skills = () => {
   const skills = [
-    'Frontend: React • Next.js • TypeScript • JavaScript • HTML5 • CSS3',
+    'Frontend: React • Next.js • TypeScript • JavaScript',
     'Styling: Tailwind CSS • SCSS',
     'State: Redux Toolkit',
     'Backend: Node.js • REST APIs',
+    'Testing: Jest · React Testing Library · Playwright',
     'Databases: MongoDB • PostgreSQL',
     'Mobile: React Native • Flutter',
     'AI: n8n Workflows • Prompt Engineering • OpenAI Codex • Cursor',
