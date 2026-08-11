@@ -1,4 +1,4 @@
-import './styles.css';
+import '../styles.css';
 import { useTranslation } from 'react-i18next';
 import { Card, Divider } from 'antd';
 

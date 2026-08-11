@@ -1,0 +1,22 @@
+{
+  "location": "Lublin, Polska",
+  "date-of-birth": "Data urodzenia",
+  "tel": "Telefon",
+  "email": "E-mail",
+  "telegram": "Telegram",
+  "git": "GitHub",
+  "name": "Vladyslav Mytrofanov",
+  "me": "Jestem Vladyslav Mytrofanov",
+  "introduce": "Frontend Developer z ponad 3-letnim doświadczeniem komercyjnym w tworzeniu aplikacji webowych skoncentrowanych na produkcie. Specjalizuję się w React, Next.js i TypeScript, z praktycznym doświadczeniem w budowaniu skalowalnych interfejsów, integracji API i poprawie doświadczeń użytkownika. Chętnie przejmuję odpowiedzialność za funkcje od koncepcji do produkcji, współpracując ściśle z projektantami i inżynierami. Ostatnio skupiam się na przepływach pracy wykorzystujących AI, automatyzacji i wewnętrznych narzędziach z użyciem n8n oraz nowoczesnych modeli LLM.",
+  "about": "O mnie",
+  "theme": "Motyw",
+  "hello-world": "<Witaj, świecie!>",
+  "frontend-dev": "Frontend Developer",
+  "skills": "Umiejętności",
+  "contacts": "Kontakt",
+  "experience": "Doświadczenie",
+  "education": "Edukacja",
+  "plus-education": "Dodatkowa edukacja",
+  "lang": "Język",
+  "languages": "Języki"
+}

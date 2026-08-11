@@ -1,7 +1,9 @@
 import { Card, Timeline } from 'antd';
-import './styles.css';
+import '../styles.css';
+import {useTranslation} from "react-i18next";
 
 const Skills = () => {
+  const { t } = useTranslation();
   const skills = [
     'Frontend: React • Next.js • TypeScript • JavaScript',
     'Styling: Tailwind CSS • SCSS',
@@ -15,7 +17,7 @@ const Skills = () => {
   ];
 
   return (
-    <Card title="Skills" style={{ width: '100%' }} className='skillsCard'>
+    <Card title={t('skills')} style={{ width: '100%' }} className='skillsCard'>
       <Timeline>
         {skills.map((skill, index) => (
           <Timeline.Item key={index}>{skill}</Timeline.Item>

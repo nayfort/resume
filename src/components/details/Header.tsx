@@ -5,7 +5,8 @@ import { useTranslation } from 'react-i18next';
 import { Button, Menu, Dropdown } from 'antd';
 import { DownOutlined } from '@ant-design/icons';
 import en from '../../assets/enFlag.png';
-import uk from '../../assets/ukFlag.png';
+import ua from '../../assets/uaFlag.png';
+import pl from '../../assets/plFlag.png';
 import themeLogo from '../../assets/theme.png';
 import { useIsMobile } from '../../hooks/useIsMobile.tsx';
 
@@ -25,9 +26,14 @@ const Header: React.FC = () => {
                     <img src={en} alt="English" className="changeButton" /> English
                 </div>
             </Menu.Item>
-            <Menu.Item key="uk" onClick={() => changeLanguage('ua')}>
+            <Menu.Item key="ua" onClick={() => changeLanguage('ua')}>
                 <div className='langElTitle'>
-                    <img src={uk} alt="Ukrainian" className="changeButton" /> Українська
+                    <img src={ua} alt="Ukrainian" className="changeButton" /> Українська
+                </div>
+            </Menu.Item>
+            <Menu.Item key="pl" onClick={() => changeLanguage('pl')}>
+                <div className='langElTitle'>
+                    <img src={pl} alt="Polski" className="changeButton" /> Polski
                 </div>
             </Menu.Item>
         </Menu>
