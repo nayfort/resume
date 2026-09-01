@@ -58,13 +58,6 @@ const Experience = () => {
           <br/>
           • Maintained and enhanced existing mobile applications.
         </p>
-        <p className="expText">
-          • Knots 3D – Refactoring, UI modernization, dependency updates.
-          <br/>
-          • VPN App – Library migration, iOS releases, App Store deployment.
-          <br/>
-          • Finance Calculator – UI improvements, maintenance, bug fixes.
-        </p>
       </Card>
 
       <Divider />
@@ -74,64 +67,17 @@ const Experience = () => {
           <b>Responsibilities & Contributions:</b>
           <br/>
           <br/>
-          • Developed and maintained React and TypeScript web applications.
+          • Built and maintained web and mobile apps using React, TypeScript, and React Native.
           <br/>
-          • Built reusable UI components and integrated REST APIs.
+          • Developed reusable UI components, interactive forms, and responsive layouts.
           <br/>
-          • Worked with MongoDB and MySQL databases.
+          • Integrated REST APIs and backend services using Node.js and TypeORM.
           <br/>
-          • Improved existing features through optimization and refactoring.
+          • Implemented core calculation algorithms and business logic.
           <br/>
-          • Collaborated with senior developers on feature delivery.
-        </p>
-        <p className="expText">
-          <b>Projects:</b>
+          • Optimized performance, refactored code, and improved UI consistency.
           <br/>
-          • NerdLab Zeus — Admin panel for managing and viewing 3D assets
-          <br/>
-          <br/>
-          Highlights:
-          • Developed reusable UI components for the admin panel.
-          <br/>
-          • Implemented forms, tables, and settings pages.
-          <br/>
-          • Collaborated with backend developers to integrate APIs.
-          <br/>
-          <br/>
-          • Synergy Hub — Full-stack application
-          <br/>
-          <br/>
-          Highlights:
-          <br/>
-          • Integrated backend services using Node.js and TypeORM.
-          <br/>
-          • Implemented REST API endpoints and business logic.
-          <br/>
-          • Collaborated with senior developers on architecture and feature delivery.
-          <br/>
-          <br/>
-          • BetHead — Sports betting frontend
-          <br/>
-          <br/>
-          Highlights:
-          <br/>
-          • Customized interactive UI components for the betting platform.
-          <br/>
-          • Implemented responsive layouts and graphical interface elements.
-          <br/>
-          • Improved usability and consistency across application screens.
-          <br/>
-          <br/>
-          • Truck Loading — Mobile calculator app
-          <br/>
-          <br/>
-          Highlights:
-          <br/>
-          • Implemented calculation algorithms for truck loading scenarios.
-          <br/>
-          • Developed responsive mobile UI using React Native.
-          <br/>
-          • Integrated business logic with user-friendly input forms.
+          • Collaborated with backend developers and senior engineers on feature delivery.
         </p>
       </Card>
     </div>
