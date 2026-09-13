@@ -5,15 +5,15 @@ import {useTranslation} from "react-i18next";
 const Skills = () => {
   const { t } = useTranslation();
   const skills = [
-    'Frontend: React • Next.js • TypeScript • JavaScript',
+    'Frontend: React · Next.js · TypeScript · JavaScript · Redux Toolkit',
     'Styling: Tailwind CSS • SCSS',
-    'State: Redux Toolkit',
-    'Backend: Node.js • REST APIs',
     'Testing: Jest · React Testing Library · Playwright',
-    'Databases: MongoDB • PostgreSQL',
-    'Mobile: React Native • Flutter',
-    'AI: n8n Workflows • Prompt Engineering • OpenAI Codex • Cursor',
-    'Tools: Git • Docker • Postman'
+    'Backend & Data: Node.js · REST APIs · WebSockets · PostgreSQL · MongoDB',
+    'Authentication: JWT · OAuth 2.0 · Session-based authentication',
+    'Infrastructure & Build: Docker · Kubernetes · Linux · Bash · Vite · Webpack',
+    'Tools: Git · Postman · Figma · Jira',
+    'Mobile: React Native · Flutter · Store deployment',
+    'AI & Automation: LLM APIs · n8n · Prompt engineering'
   ];
 
   return (
