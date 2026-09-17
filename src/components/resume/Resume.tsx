@@ -14,16 +14,16 @@ const Resume: React.FC = () => {
     <div className='mainContainer'>
       <div className='contentContainer'>
         <Card className='headerCvComponent' id="hero">
-          <Row gutter={[16, 16]} align="middle">
+          <Row gutter={[28, 24]} align="middle">
             <Col>
               <img src={Photo} alt="photo" className='cvLogo' />
             </Col>
-            <Col>
-              <Title level={4} className='headerTextElement'>{t('hello-world')}</Title>
-              <Title level={3} className='headerTextElement'>{t('me')}</Title>
-              <Title level={4} className='headerTextElement'>{t('frontend-dev')}</Title>
-              <Title level={5} className='headerTextElement'>{t('introduce')}</Title>
-              <Title level={5} className='headerTextElement'>{t('location')}</Title>
+            <Col flex="1" className="heroCopy">
+              <Title level={5} className='headerTextElement heroEyebrow'>{t('hello-world')}</Title>
+              <Title level={1} className='headerTextElement heroName'>{t('me')}</Title>
+              <Title level={4} className='headerTextElement heroRole'>{t('frontend-dev')}</Title>
+              <Typography.Paragraph className='heroDescription'>{t('introduce')}</Typography.Paragraph>
+              <Typography.Paragraph className='heroLocation'>{t('location')}</Typography.Paragraph>
             </Col>
           </Row>
         </Card>

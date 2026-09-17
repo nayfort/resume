@@ -52,7 +52,7 @@ body {
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 10%;
+  scroll-padding-top: 84px;
 }
 
 a {
@@ -61,4 +61,10 @@ a {
 }
 a:hover {
   color: var(--accent-color-hover);
+}
+body, .ant-typography, .ant-card, .ant-menu, .ant-dropdown { font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+a:focus-visible { outline: 2px solid var(--accent-color); outline-offset: 4px; border-radius: 3px; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation: none !important; transition: none !important; }
 }

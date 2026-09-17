@@ -27,7 +27,7 @@
     padding: 20px 0 0 0;
 }
 
-.aboutCard, .educationCard, .footerCard, .languagesCard, .experienceCard, .headerCvComponent, .skillsCard {
+.aboutCard, .educationCard, .languagesCard, .experienceCard, .headerCvComponent, .skillsCard {
     background-color: var(--second-background) !important;
     border: 1px solid var(--border-color) !important;
     border-radius: 12px !important;
@@ -52,4 +52,35 @@
 }
 .experienceCard .ant-card-head-title {
     color: var(--main-text) !important;
+}
+
+.contentContainer .ant-card { font-size: 15px; line-height: 1.75; }
+.contentContainer .ant-card-head {
+    padding: 0 28px;
+    min-height: 62px;
+    border-bottom-color: var(--border-color);
+}
+.contentContainer .ant-card-head-title {
+    white-space: normal;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 1.5;
+    padding: 18px 0;
+    letter-spacing: -0.015em;
+}
+.contentContainer .ant-card-body { padding: 28px; }
+.contentContainer .headerCvComponent .ant-card-body { padding: 32px; }
+.contentContainer .ant-divider { border-color: var(--border-color); margin: 24px 0; }
+.expText { margin: 0; }
+.expBlockTitle { margin: 8px 0 16px; font-size: 20px; letter-spacing: -0.02em; color: var(--main-text) !important; }
+.contentContainer .ant-timeline-item-head { background: var(--second-background); border-color: var(--accent-color); }
+.contentContainer .ant-timeline-item-tail { border-inline-start-color: var(--border-color); }
+.contentContainer .ant-timeline-item:last-child { padding-bottom: 0; }
+.contentContainer .ant-timeline-item:last-child .ant-timeline-item-content { min-height: 0; }
+.contentContainer .ant-list-item { border-block-end-color: var(--border-color); }
+.profileLinks, .educationLinks { text-underline-offset: 4px; text-decoration-color: transparent !important; transition: color 0.2s ease, text-decoration-color 0.2s ease; }
+.profileLinks:hover, .educationLinks:hover { color: var(--accent-color-hover) !important; text-decoration-color: currentColor !important; }
+@media (max-width: 600px) {
+    .contentContainer .ant-card-body, .contentContainer .headerCvComponent .ant-card-body { padding: 20px; }
+    .contentContainer .ant-card-head { padding: 0 20px; }
 }

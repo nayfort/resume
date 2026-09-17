@@ -20,7 +20,7 @@ instead of a static PDF — with theming, i18n, and a component-driven architect
 
 ## 🛠 Tech Stack
 
-**Frontend:** React · TypeScript · Vite · Tailwind CSS
+**Frontend:** React · TypeScript · Vite · CSS
 **UI:** Ant Design
 **Tooling:** ESLint, i18next
 
@@ -57,7 +57,7 @@ src/
 │   └── resume/      # About, Education, Experience, Langs, Skills
 ├── hooks/           # Custom React hooks
 └── utils/           # Helper functions
-    └── i18n/        # Translation files
+    └── i18n/        # i18n configuration
 ```
 
 ## 📜 Available Scripts

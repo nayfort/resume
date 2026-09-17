@@ -1,7 +1,5 @@
 {
   "location": "Lublin, Poland",
-  "date-of-birth": "Date of birth",
-  "tel": "Tel",
   "email": "E-mail",
   "telegram": "Telegram",
   "git": "GitHub",
@@ -9,7 +7,6 @@
   "me": "I'm Vladyslav Mytrofanov",
   "introduce": "Frontend developer with 3+ years of commercial experience building React web applications and React Native mobile apps. Experience includes reusable UI components, REST API integrations, internationalization, and iOS production releases.",
   "about": "About",
-  "theme": "Theme",
   "hello-world": "<Hello, World!>",
   "frontend-dev": "Frontend Engineer",
   "skills": "Skills",
