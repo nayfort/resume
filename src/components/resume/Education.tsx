@@ -1,39 +1,33 @@
-import '../styles.css';
-import { useTranslation } from 'react-i18next';
-import {Card, Divider, Typography} from 'antd';
-
-const { Link } = Typography;
-
-const Education = () => {
+import ExternalLink from "../ui/ExternalLink";
+import { useTranslation } from "react-i18next";
+import SectionCard from "../ui/SectionCard";
+export default function Education() {
   const { t } = useTranslation();
-
   return (
-    <div>
-      <Card title={t('education')} className='educationCard'>
-        <div className='educationText'>(2023 - 2027 — Expected, flexible academic schedule)</div>
-        <div className='blockHeader'>
-          <Link href="https://www.kpi.kharkov.ua/eng/" target="_blank" className='educationText'><a className='educationLinks'>Kharkiv Polytechnic Institute</a></Link>
-          <div className='educationText'>SOFTWARE ENGINEERING OF COMPUTER SYSTEMS</div>
-        </div>
-
-        <Divider />
-
-        <div>
-          <div className='educationTextTitle'>{t('plus-education')}</div>
-          <div className='educationText'>(2019 - 2022)</div>
-          <div className='blockHeader'>
-            <Link href="https://kr.itstep.org/" target="_blank" className='educationText'><a className='educationLinks'>STEP: IT Academy</a></Link>
-          </div>
-          <ul>
-            <li className='educationText'>Website design and layout</li>
-            <li className='educationText'>HTML / CSS course</li>
-            <li className='educationText'>JavaScript course</li>
-            <li className='educationText'>Python course</li>
-          </ul>
-        </div>
-      </Card>
-    </div>
+    <SectionCard
+      id="education"
+      title={t("education")}
+      className="educationCard"
+    >
+      <div className="educationEntry">
+        <span className="jobDates">2023 — 2027 · {t("expected")}</span>
+        <h3>
+          <ExternalLink href="https://www.kpi.kharkov.ua/eng/">
+            {t("university")}
+          </ExternalLink>
+        </h3>
+        <p>{t("degree")}</p>
+        <p className="mutedText">{t("schedule")}</p>
+      </div>
+      <div className="educationEntry">
+        <span className="jobDates">2019 — 2022</span>
+        <h3>
+          <ExternalLink href="https://kr.itstep.org/">
+            STEP: IT Academy
+          </ExternalLink>
+        </h3>
+        <p>{t("courses")}</p>
+      </div>
+    </SectionCard>
   );
-};
-
-export default Education;
+}

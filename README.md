@@ -17,6 +17,9 @@ instead of a static PDF — with theming, i18n, and a component-driven architect
 - 📱 Fully responsive layout for desktop and mobile
 - ⚡ Built with Vite for fast dev/build performance
 - 🧩 Component-based architecture (React + TypeScript)
+- Section navigation with active-section highlighting
+- Email copy confirmation and back-to-top navigation
+- Print stylesheet for browser printing / saving to PDF
 
 ## 🛠 Tech Stack
 
@@ -49,15 +52,17 @@ instead of a static PDF — with theming, i18n, and a component-driven architect
 
 ## 📁 Project Structure
 
-```
+```text
 src/
-├── assets/          # Images, icons, static resources
-├── components/      # Reusable UI components
-│   ├── details/     # Header, Footer, shared layout pieces
-│   └── resume/      # About, Education, Experience, Langs, Skills
-├── hooks/           # Custom React hooks
-└── utils/           # Helper functions
-    └── i18n/        # i18n configuration
+├── assets/             # Profile photo and language flags
+├── components/
+│   ├── ui/             # Shared SectionCard, TagList, ExternalLink
+│   ├── details/        # Header and footer
+│   ├── resume/         # Resume sections
+│   └── print.css       # Print-specific layout
+├── data/               # Profile, section IDs, experience and skills
+├── hooks/              # Theme, clipboard lifecycle, active section
+└── utils/i18n/         # Typed translations and locale configuration
 ```
 
 ## 📜 Available Scripts
@@ -66,7 +71,10 @@ src/
 |---|---|
 | `npm install` | Installs all dependencies |
 | `npm run dev` | Starts the development server |
-| `npm run build` | Builds the app for production |
+| `npm run build` | Type-checks and builds the app for production |
+| `npm run lint` | Checks TypeScript and React code |
+| `npm run preview` | Previews the production build |
+| `npm run format:check` | Checks consistent source formatting |
 
 ## 📬 Contact
 
@@ -77,3 +85,12 @@ src/
 ## 📄 License
 
 This project is open source and available under the [MIT License](LICENSE).
+
+## Maintaining the resume
+
+- Update contact details in `src/data/profile.ts`.
+- Update employment metadata in `src/data/experience.ts` and technologies in `src/data/skills.ts`.
+- Keep the English, Ukrainian and Polish JSON translations in `src/utils/i18n/locales` aligned. TypeScript checks translation keys against the English resource.
+- Use `SectionCard` for titled resume sections, `TagList` for technology lists and `ExternalLink` for links that should preserve the resume tab.
+- UI components render content; hooks own browser subscriptions and clipboard timer cleanup. Print styling is separate from screen styling.
+- Before submitting changes, run `npm run lint`, `npm run format:check` and `npm run build`.

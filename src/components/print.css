@@ -1,0 +1,106 @@
+@media print {
+  @page {
+    size: A4;
+    margin: 14mm;
+  }
+  :root,
+  body,
+  body[data-theme] {
+    --main-text: #17202b;
+    --muted-text: #485463;
+    --accent-color: #15529a;
+    --body-background: #fff;
+    --second-background: #fff;
+    --border-color: #d7dce2;
+    --card-shadow: none;
+    color-scheme: light;
+  }
+  .headerContainer,
+  .footerContainer,
+  .heroActions,
+  .skipLink,
+  .languageDropdown {
+    display: none !important;
+  }
+  .mainContainer {
+    padding: 0;
+    max-width: none;
+    margin: 0;
+  }
+  .contentContainer {
+    gap: 14px;
+  }
+  .contentContainer .ant-card {
+    box-shadow: none !important;
+    font-size: 10pt;
+    border: none !important;
+  }
+  .contentContainer .ant-card-body,
+  .contentContainer .headerCvComponent .ant-card-body {
+    padding: 10px 0;
+  }
+  .contentContainer .ant-card-head {
+    padding: 0;
+    min-height: 0;
+  }
+  .contentContainer .ant-card-head-title {
+    padding: 8px 0;
+  }
+  .contentContainer .ant-card-head-title h2,
+  .sectionTitle {
+    font-size: 14pt;
+  }
+  .sectionTitle {
+    margin: 12px 0 4px;
+  }
+  .experienceGrid {
+    gap: 8px;
+  }
+  .experienceCard,
+  .educationEntry,
+  .skillGroup,
+  .contactItem,
+  .headerCvComponent,
+  .languagesCard {
+    break-inside: avoid;
+  }
+  .jobHeading h3 {
+    font-size: 13pt;
+  }
+  .contributionList {
+    margin: 8px 0;
+  }
+  .contributionList li {
+    margin: 3px 0;
+  }
+  .tagList {
+    gap: 4px;
+  }
+  .tagList li {
+    font-size: 8pt;
+    padding: 2px 6px;
+  }
+  .heroCopy h1.heroName.ant-typography {
+    font-size: 25pt;
+  }
+  .cvLogo {
+    width: 88px;
+    height: 88px;
+  }
+  .skillsGrid {
+    gap: 12px;
+  }
+  .coreSkills {
+    padding-bottom: 12px;
+  }
+  a {
+    text-decoration: none;
+  }
+}
+
+@media print {
+  .copyEmailRow,
+  .backToTop {
+    display: none !important;
+  }
+}

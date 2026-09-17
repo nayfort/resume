@@ -1,24 +1,21 @@
-import '../styles.css';
-import { useTranslation } from 'react-i18next';
-import { Card, List } from 'antd';
-
-const Langs = () => {
+import { useTranslation } from "react-i18next";
+import SectionCard from "../ui/SectionCard";
+export default function Langs() {
   const { t } = useTranslation();
-
-  const languages = [
-    'English - Upper-Intermediate',
-    'Polish - Beginner',
-    'Ukrainian - Native'
-  ];
-
   return (
-    <Card title={t('languages')} className='languagesCard'>
-      <List
-        dataSource={languages}
-        renderItem={(item) => <List.Item className='langText'>{item}</List.Item>}
-      />
-    </Card>
+    <SectionCard
+      id="languages"
+      title={t("languages")}
+      className="languagesCard"
+    >
+      <dl className="languageLevels">
+        {(["english", "polish", "ukrainian"] as const).map((key) => (
+          <div key={key}>
+            <dt>{t(`spoken.${key}.name`)}</dt>
+            <dd>{t(`spoken.${key}.level`)}</dd>
+          </div>
+        ))}
+      </dl>
+    </SectionCard>
   );
-};
-
-export default Langs;
+}

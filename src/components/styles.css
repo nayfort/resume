@@ -1,55 +1,171 @@
 .contentContainer {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
 .mainContainer {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 96px 28px 56px;
-    box-sizing: border-box;
-    width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 96px 28px 56px;
+  box-sizing: border-box;
+  width: 100%;
 }
 
 .cvLogo {
-    display: block;
-    width: 120px;
-    height: 120px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 3px solid var(--border-color);
+  display: block;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid var(--border-color);
 }
 
-.heroCopy { min-width: 240px; }
-.headerTextElement { color: var(--main-text) !important; }
-.heroEyebrow.ant-typography {
-    color: var(--muted-text) !important;
-    font-size: 13px;
-    font-weight: 500;
-    letter-spacing: 0.08em;
-    margin: 0 0 10px;
+.heroCopy {
+  min-width: 240px;
+}
+.headerTextElement {
+  color: var(--main-text) !important;
 }
 .heroCopy h1.heroName.ant-typography {
-    font-size: clamp(28px, 4vw, 40px);
-    line-height: 1.15;
-    letter-spacing: -0.035em;
-    margin: 0 0 12px;
+  font-size: clamp(28px, 4vw, 40px);
+  line-height: 1.15;
+  letter-spacing: -0.035em;
+  margin: 0 0 12px;
 }
-.heroCopy h4.heroRole.ant-typography {
-    color: var(--accent-color) !important;
-    font-size: 18px;
-    margin: 0 0 16px;
+.heroDescription.ant-typography {
+  color: var(--main-text);
+  margin-bottom: 12px;
 }
-.heroDescription.ant-typography { color: var(--main-text); margin-bottom: 12px; }
-.heroLocation.ant-typography { color: var(--muted-text); font-size: 13px; margin: 0; }
-.contactsElement { display: flex; flex-wrap: wrap; gap: 4px 12px; overflow-wrap: anywhere; }
-.contactsElement > :first-child { min-width: 80px; color: var(--muted-text) !important; }
+.heroLocation.ant-typography {
+  color: var(--muted-text);
+  font-size: 13px;
+  margin: 0;
+}
 
 @media screen and (max-width: 600px) {
-    .mainContainer { padding: 80px 16px 32px; }
-    .contentContainer { gap: 16px; }
-    .cvLogo { width: 88px; height: 88px; }
-    .heroCopy { min-width: 100%; }
+  .mainContainer {
+    padding: 80px 16px 32px;
+  }
+  .contentContainer {
+    gap: 16px;
+  }
+  .cvLogo {
+    width: 88px;
+    height: 88px;
+  }
+  .heroCopy {
+    min-width: 100%;
+  }
+}
+
+.heroEyebrow {
+  color: var(--muted-text);
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  margin: 0 0 12px;
+}
+.heroRole {
+  color: var(--accent-color);
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0 0 16px;
+}
+.heroActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 24px;
+}
+.actionButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px 14px;
+  min-height: 42px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  background: transparent;
+  color: var(--main-text);
+  font: inherit;
+  font-size: 13px;
+  text-decoration: none;
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease;
+}
+.actionButton:hover {
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+  background: color-mix(in srgb, var(--accent-color) 8%, transparent);
+}
+.primaryAction {
+  background: var(--accent-color);
+  color: var(--body-background);
+  border-color: var(--accent-color);
+  font-weight: 600;
+}
+.primaryAction:hover {
+  background: var(--accent-color-hover);
+  color: var(--body-background);
+}
+.actionButton:focus-visible {
+  outline: 2px solid var(--accent-color);
+  outline-offset: 3px;
+}
+.skipLink {
+  position: fixed;
+  left: 16px;
+  top: -100px;
+  padding: 10px 16px;
+  background: var(--second-background);
+  color: var(--main-text);
+  border: 1px solid var(--accent-color);
+  z-index: 2000;
+}
+.skipLink:focus {
+  top: 8px;
+}
+
+.copyEmailRow {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 24px;
+}
+.copyEmailRow [role="status"] {
+  color: var(--muted-text);
+  font-size: 13px;
+}
+.backToTop {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--second-background);
+  color: var(--accent-color);
+  border: 1px solid var(--border-color);
+  box-shadow: var(--card-shadow);
+  text-decoration: none;
+  font-size: 24px;
+  z-index: 10;
+}
+@media (max-width: 600px) {
+  .backToTop {
+    right: 12px;
+    bottom: 12px;
+  }
+  .headerContent > .navLink {
+    max-width: 150px;
+    line-height: 1.3;
+  }
 }

@@ -1,0 +1,71 @@
+{
+  "location": "Lublin, Poland",
+  "email": "E-mail",
+  "name": "Vladyslav Mytrofanov",
+  "introduce": "Frontend developer with 3+ years of commercial experience building React web applications and React Native mobile apps. Experience includes reusable UI components, REST API integrations, internationalization, and iOS production releases.",
+  "frontend-dev": "Frontend Engineer",
+  "skills": "Skills",
+  "contacts": "Contacts",
+  "experience": "Experience",
+  "education": "Education",
+  "lang": "Language",
+  "languages": "Languages",
+  "contactAction": "Get in touch",
+  "printAction": "Print / Save PDF",
+  "skip": "Skip to content",
+  "technologies": "Technologies",
+  "expected": "expected",
+  "university": "Kharkiv Polytechnic Institute",
+  "degree": "Software Engineering of Computer Systems",
+  "schedule": "Flexible academic schedule",
+  "courses": "Web design and layout · HTML / CSS · JavaScript · Python",
+  "themeLabel": "Switch color theme",
+  "skillGroups": {
+    "core": "Core frontend",
+    "ui": "UI & styling",
+    "testing": "Testing",
+    "backend": "Backend & data",
+    "infra": "Infrastructure & build",
+    "tools": "Tools",
+    "mobile": "Mobile",
+    "automation": "AI & automation"
+  },
+  "spoken": {
+    "english": {
+      "name": "English",
+      "level": "Upper-Intermediate"
+    },
+    "polish": {
+      "name": "Polish",
+      "level": "Beginner"
+    },
+    "ukrainian": {
+      "name": "Ukrainian",
+      "level": "Native"
+    }
+  },
+  "jobs": {
+    "tapok": [
+      "Built and maintained HTML conversation scripts for customer-facing workflows.",
+      "Developed automation workflows with n8n and refined prompts for AI-powered tools."
+    ],
+    "bettv": [
+      "Developed a React-based betting platform, including reusable UI components and responsive layouts.",
+      "Integrated REST APIs, managed dynamic client-side data and implemented multilingual interfaces."
+    ],
+    "qulisoft": [
+      "Modernized legacy React Native applications through refactoring and dependency upgrades.",
+      "Resolved UI and compatibility issues and managed iOS builds and production releases through Xcode and App Store Connect."
+    ],
+    "nerdlab": [
+      "Built web and mobile applications with React, TypeScript and React Native.",
+      "Developed reusable components, interactive forms and responsive layouts; integrated REST APIs and backend services with Node.js and TypeORM.",
+      "Implemented calculation algorithms and business logic, optimized performance and improved UI consistency."
+    ]
+  },
+  "copyEmail": "Copy email",
+  "copied": "Email copied",
+  "copyFailed": "Could not copy. Select the email above to copy it manually.",
+  "backToTop": "Back to top",
+  "navigation": "Sections"
+}

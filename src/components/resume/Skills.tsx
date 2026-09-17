@@ -1,30 +1,23 @@
-import { Card, Timeline } from 'antd';
-import '../styles.css';
-import {useTranslation} from "react-i18next";
+import SectionCard from "../ui/SectionCard";
+import TagList from "../ui/TagList";
+import { skillGroups } from "../../data/skills";
+import { useTranslation } from "react-i18next";
 
-const Skills = () => {
+export default function Skills() {
   const { t } = useTranslation();
-  const skills = [
-    'Frontend: React · Next.js · TypeScript · JavaScript · Redux Toolkit',
-    'Styling: Tailwind CSS • SCSS',
-    'Testing: Jest · React Testing Library · Playwright',
-    'Backend & Data: Node.js · REST APIs · WebSockets · PostgreSQL · MongoDB',
-    'Authentication: JWT · OAuth 2.0 · Session-based authentication',
-    'Infrastructure & Build: Docker · Kubernetes · Linux · Bash · Vite · Webpack',
-    'Tools: Git · Postman · Figma · Jira',
-    'Mobile: React Native · Flutter · Store deployment',
-    'AI & Automation: LLM APIs · n8n · Prompt engineering'
-  ];
-
   return (
-    <Card title={t('skills')} style={{ width: '100%' }} className='skillsCard'>
-      <Timeline>
-        {skills.map((skill, index) => (
-          <Timeline.Item key={index}>{skill}</Timeline.Item>
+    <SectionCard id="skills" title={t("skills")} className="skillsCard">
+      <div className="skillsGrid">
+        {skillGroups.map(([key, skills]) => (
+          <div
+            key={key}
+            className={key === "core" ? "skillGroup coreSkills" : "skillGroup"}
+          >
+            <h3>{t(`skillGroups.${key}`)}</h3>
+            <TagList items={skills} />
+          </div>
         ))}
-      </Timeline>
-    </Card>
+      </div>
+    </SectionCard>
   );
-};
-
-export default Skills;
+}

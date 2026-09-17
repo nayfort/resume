@@ -1,0 +1,71 @@
+{
+  "location": "Lublin, Polska",
+  "email": "E-mail",
+  "name": "Vladyslav Mytrofanov",
+  "introduce": "Programista frontend z ponad 3-letnim doświadczeniem komercyjnym w tworzeniu aplikacji internetowych w technologii React oraz aplikacji mobilnych w React Native. Doświadczenie obejmuje tworzenie komponentów UI wielokrotnego użytku, integrację z REST API, internacjonalizację oraz publikację aplikacji na platformę iOS.",
+  "frontend-dev": "Inżynier frontend",
+  "skills": "Umiejętności",
+  "contacts": "Kontakt",
+  "experience": "Doświadczenie",
+  "education": "Edukacja",
+  "lang": "Język",
+  "languages": "Języki",
+  "contactAction": "Napisz do mnie",
+  "printAction": "Drukuj / Zapisz PDF",
+  "skip": "Przejdź do treści",
+  "technologies": "Technologie",
+  "expected": "planowane ukończenie",
+  "university": "Politechnika Charkowska",
+  "degree": "Inżynieria oprogramowania systemów komputerowych",
+  "schedule": "Elastyczny plan zajęć",
+  "courses": "Projektowanie i tworzenie stron · HTML / CSS · JavaScript · Python",
+  "themeLabel": "Zmień motyw kolorystyczny",
+  "skillGroups": {
+    "core": "Główny stos frontendowy",
+    "ui": "Interfejs i style",
+    "testing": "Testowanie",
+    "backend": "Backend i dane",
+    "infra": "Infrastruktura i budowanie",
+    "tools": "Narzędzia",
+    "mobile": "Aplikacje mobilne",
+    "automation": "AI i automatyzacja"
+  },
+  "spoken": {
+    "english": {
+      "name": "Angielski",
+      "level": "Średnio zaawansowany wyższy"
+    },
+    "polish": {
+      "name": "Polski",
+      "level": "Podstawowy"
+    },
+    "ukrainian": {
+      "name": "Ukraiński",
+      "level": "Ojczysty"
+    }
+  },
+  "jobs": {
+    "tapok": [
+      "Tworzyłem i utrzymywałem skrypty HTML wspierające komunikację z klientami.",
+      "Budowałem automatyzacje w n8n i udoskonalałem prompty dla narzędzi opartych na AI."
+    ],
+    "bettv": [
+      "Rozwijałem platformę bukmacherską w React, komponenty UI wielokrotnego użytku i responsywne interfejsy.",
+      "Integrowałem REST API, obsługiwałem dynamiczne dane i wdrożyłem interfejsy wielojęzyczne."
+    ],
+    "qulisoft": [
+      "Modernizowałem aplikacje React Native poprzez refaktoryzację i aktualizacje zależności.",
+      "Rozwiązywałem problemy interfejsu i kompatybilności oraz zarządzałem kompilacjami i wydaniami iOS w Xcode i App Store Connect."
+    ],
+    "nerdlab": [
+      "Tworzyłem aplikacje internetowe i mobilne w React, TypeScript i React Native.",
+      "Budowałem komponenty wielokrotnego użytku, formularze i responsywne interfejsy; integrowałem REST API oraz usługi backendowe z Node.js i TypeORM.",
+      "Implementowałem algorytmy obliczeniowe i logikę biznesową, optymalizowałem wydajność i spójność interfejsów."
+    ]
+  },
+  "copyEmail": "Kopiuj e-mail",
+  "copied": "E-mail skopiowany",
+  "copyFailed": "Nie udało się skopiować. Zaznacz adres powyżej i skopiuj go ręcznie.",
+  "backToTop": "Wróć na górę",
+  "navigation": "Sekcje"
+}

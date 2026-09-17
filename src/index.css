@@ -8,36 +8,36 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  --body-background: #0A0E14;
-  --second-background: #151B24;
+  --body-background: #0a0e14;
+  --second-background: #151b24;
 
-  --header-background: #10151D;
-  --footer-background: #0A0E14;
+  --header-background: #10151d;
+  --footer-background: #0a0e14;
 
-  --main-text: #E6EDF3;
-  --main-text-reverse: #0A0E14;
-  --muted-text: #8B949E;
+  --main-text: #e6edf3;
+  --main-text-reverse: #0a0e14;
+  --muted-text: #8b949e;
 
-  --accent-color: #58A6FF;
-  --accent-color-hover: #79B8FF;
+  --accent-color: #58a6ff;
+  --accent-color-hover: #79b8ff;
 
   --border-color: rgba(255, 255, 255, 0.08);
   --card-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
 }
 
-[data-theme='light'] {
-  --body-background: #F5F7FA;
-  --second-background: #FFFFFF;
+[data-theme="light"] {
+  --body-background: #f5f7fa;
+  --second-background: #ffffff;
 
-  --header-background: #FFFFFF;
-  --footer-background: #EDEFF2;
+  --header-background: #ffffff;
+  --footer-background: #edeff2;
 
-  --main-text: #1E2328;
-  --main-text-reverse: #F5F7FA;
-  --muted-text: #6E7681;
+  --main-text: #1e2328;
+  --main-text-reverse: #f5f7fa;
+  --muted-text: #6e7681;
 
-  --accent-color: #0969DA;
-  --accent-color-hover: #0860CA;
+  --accent-color: #0969da;
+  --accent-color-hover: #0860ca;
 
   --border-color: rgba(0, 0, 0, 0.08);
   --card-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
@@ -62,9 +62,32 @@ a {
 a:hover {
   color: var(--accent-color-hover);
 }
-body, .ant-typography, .ant-card, .ant-menu, .ant-dropdown { font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
-a:focus-visible { outline: 2px solid var(--accent-color); outline-offset: 4px; border-radius: 3px; }
+body,
+.ant-typography,
+.ant-card,
+.ant-menu,
+.ant-dropdown {
+  font-family:
+    Inter,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+}
+a:focus-visible {
+  outline: 2px solid var(--accent-color);
+  outline-offset: 4px;
+  border-radius: 3px;
+}
 @media (prefers-reduced-motion: reduce) {
-  html { scroll-behavior: auto; }
-  *, *::before, *::after { animation: none !important; transition: none !important; }
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
 }

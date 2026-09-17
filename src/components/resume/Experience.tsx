@@ -1,81 +1,38 @@
-import '../styles.css';
-import { useTranslation } from 'react-i18next';
-import { Card, Divider } from 'antd';
+import { useTranslation } from "react-i18next";
+import { Card } from "antd";
+import { jobs } from "../../data/experience";
+import TagList from "../ui/TagList";
 
-const Experience = () => {
+export default function Experience() {
   const { t } = useTranslation();
-
   return (
-    <div className="experienceSection" id="experience">
-      <div className="expBlockTitle">{t('experience')}:</div>
-
-      <Card title="TapOk (December 2024 - June 2026 — Frontend Developer)" className='experienceCard'>
-        <p className="expText">
-          <b>Responsibilities & Contributions:</b>
-          <br/>
-          <br/>
-          • Created and updated HTML scripts to guide customer conversations.
-          <br/>
-          • Built and maintained automation workflows using n8n.
-          <br/>
-          • Created and refined prompts for AI-powered tools.
-        </p>
-      </Card>
-
-      <Divider />
-
-      <Card title="BetTV (July 2023 - July 2024 — Frontend Developer)" className='experienceCard'>
-        <p className="expText">
-          <b>Responsibilities & Contributions:</b>
-          <br/>
-          <br/>
-          • Developed and maintained a large-scale betting platform using React.
-          <br/>
-          • Built reusable UI components and responsive page layouts.
-          <br/>
-          • Integrated REST APIs and handled dynamic client-side data.
-          <br/>
-          • Implemented internationalization (i18n).
-        </p>
-      </Card>
-
-      <Divider />
-
-      <Card title="Qulisoft (March 2023 - July 2023 — React Native Developer)" className='experienceCard'>
-        <p className="expText">
-          <b>Responsibilities & Contributions:</b>
-          <br/>
-          <br/>
-          • Modernized legacy React Native applications through refactoring and dependency upgrades.
-          <br/>
-          • Delivered UI improvements and resolved compatibility issues.
-          <br/>
-          • Managed iOS builds and production releases via Xcode and App Store Connect.
-          <br/>
-          • Maintained and enhanced existing mobile applications.
-        </p>
-      </Card>
-
-      <Divider />
-
-      <Card title="NerdLab (March 2022 - July 2023 — Frontend Developer)" className='experienceCard'>
-        <p className="expText">
-          <b>Responsibilities & Contributions:</b>
-          <br/>
-          <br/>
-          • Built and maintained web and mobile apps using React, TypeScript, and React Native.
-          <br/>
-          • Developed reusable UI components, interactive forms, and responsive layouts.
-          <br/>
-          • Integrated REST APIs and backend services using Node.js and TypeORM.
-          <br/>
-          • Implemented core calculation algorithms and business logic.
-          <br/>
-          • Optimized performance, refactored code, and improved UI consistency.
-        </p>
-      </Card>
-    </div>
+    <section
+      id="experience"
+      aria-labelledby="experience-title"
+      className="experienceSection"
+    >
+      <h2 id="experience-title" className="sectionTitle">
+        {t("experience")}
+      </h2>
+      <div className="experienceGrid">
+        {jobs.map((job) => (
+          <Card key={job.id} className="experienceCard">
+            <div className="jobHeading">
+              <div>
+                <h3>{job.company}</h3>
+                <p className="jobRole">{job.role}</p>
+              </div>
+              <span className="jobDates">{job.dates}</span>
+            </div>
+            <ul className="contributionList">
+              {t(`jobs.${job.id}`, { returnObjects: true }).map((point) => (
+                <li key={point}>{point}</li>
+              ))}
+            </ul>
+            <TagList items={job.stack} label={t("technologies")} />
+          </Card>
+        ))}
+      </div>
+    </section>
   );
-};
-
-export default Experience;
+}
