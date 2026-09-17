@@ -14,13 +14,11 @@ const Experience = () => {
           <b>Responsibilities & Contributions:</b>
           <br/>
           <br/>
-          • Developed and maintained internal scripts.
+          • Created and updated HTML scripts to guide customer conversations.
           <br/>
-          • Designed and refined prompts for AI-powered tools and workflows.
+          • Built and maintained automation workflows using n8n.
           <br/>
-          • Built and maintained workflows using n8n.
-          <br/>
-          • Contributed to AI initiatives by exploring and implementing practical AI solutions.
+          • Created and refined prompts for AI-powered tools.
         </p>
       </Card>
 
@@ -38,8 +36,6 @@ const Experience = () => {
           • Integrated REST APIs and handled dynamic client-side data.
           <br/>
           • Implemented internationalization (i18n).
-          <br/>
-          • Collaborated with backend developers and designers.
         </p>
       </Card>
 
@@ -76,8 +72,6 @@ const Experience = () => {
           • Implemented core calculation algorithms and business logic.
           <br/>
           • Optimized performance, refactored code, and improved UI consistency.
-          <br/>
-          • Collaborated with backend developers and senior engineers on feature delivery.
         </p>
       </Card>
     </div>

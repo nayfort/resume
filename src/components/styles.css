@@ -32,9 +32,9 @@
 }
 
 .cvLogo{
-    width: 40%;
-    height: 40%;
-    border-radius: 60%;
+    width: 30%;
+    height: 30%;
+    border-radius: 100%;
     border: 2px solid var(--border-color);
 }
 
