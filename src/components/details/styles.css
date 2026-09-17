@@ -44,18 +44,37 @@
     color: var(--accent-color);
 }
 
-.themeButton {
+.headerIconButton {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 32px;
+    width: 32px;
+    height: 32px;
     border: none;
-    background: none;
-    padding: 0 20px 0 0;
+    border-radius: 50%;
+    background: transparent;
+    padding: 0;
+    color: var(--main-text);
     cursor: pointer;
 }
 
-.controlButton {
-    border: none;
-    background: none;
-    padding: 0;
-    cursor: pointer;
+.headerIconButton:hover,
+.headerIconButton:active {
+    background: transparent;
+}
+
+.headerIconButton:focus-visible {
+    outline: 2px solid var(--accent-color);
+    outline-offset: -2px;
+}
+
+.headerIconButton .changeButton {
+    transition: transform 0.2s ease;
+}
+
+.headerIconButton:hover .changeButton {
+    transform: scale(1.08);
 }
 
 .changeButton {
@@ -93,4 +112,34 @@
     align-content: center;
     align-items: center;
     gap: 8px;
+}
+
+.languageDropdown .ant-dropdown-menu {
+    min-width: 160px;
+    padding: 6px;
+    background: var(--second-background);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    box-shadow: var(--card-shadow);
+}
+
+.languageDropdown .ant-dropdown-menu .ant-dropdown-menu-item {
+    padding: 8px 10px;
+    color: var(--main-text);
+    border-radius: 8px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.languageDropdown .ant-dropdown-menu .ant-dropdown-menu-item:hover,
+.languageDropdown .ant-dropdown-menu .ant-dropdown-menu-item-active {
+    background: var(--border-color);
+}
+
+.languageDropdown .ant-dropdown-menu .ant-dropdown-menu-item-selected {
+    color: var(--accent-color);
+    background: color-mix(in srgb, var(--accent-color) 12%, transparent);
+}
+
+.languageDropdown .ant-dropdown-menu .ant-dropdown-menu-item-selected:hover {
+    background: color-mix(in srgb, var(--accent-color) 20%, transparent);
 }

@@ -2,25 +2,28 @@ import React from 'react';
 import './styles.css';
 import { useTheme } from '../../hooks/useTheme';
 import { useTranslation } from 'react-i18next';
-import { Button, Menu, Dropdown } from 'antd';
-import { DownOutlined } from '@ant-design/icons';
+import { Menu, Dropdown } from 'antd';
 import en from '../../assets/enFlag.png';
 import ua from '../../assets/uaFlag.png';
 import pl from '../../assets/plFlag.png';
 import themeLogo from '../../assets/theme.png';
-import { useIsMobile } from '../../hooks/useIsMobile.tsx';
 
 const Header: React.FC = () => {
     const { t, i18n } = useTranslation();
     const { toggleTheme } = useTheme();
-    const isMobile = useIsMobile();
+    const languages = {
+        en: { flag: en, label: 'English' },
+        ua: { flag: ua, label: 'Українська' },
+        pl: { flag: pl, label: 'Polski' },
+    };
+    const currentLanguage = languages[i18n.resolvedLanguage as keyof typeof languages] || languages.en;
 
     const changeLanguage = (lng: string) => {
         i18n.changeLanguage(lng);
     };
 
     const languageMenu = (
-        <Menu>
+        <Menu selectedKeys={[i18n.resolvedLanguage || 'en']}>
             <Menu.Item key="en" onClick={() => changeLanguage('en')}>
                 <div className='langElTitle'>
                     <img src={en} alt="English" className="changeButton" /> English
@@ -52,11 +55,13 @@ const Header: React.FC = () => {
                 </div>
             </div>
             <div className="rightControls">
-                <Button onClick={toggleTheme} className="themeButton" icon={<img src={themeLogo} alt="Theme" className="changeButton" />} />
-                <Dropdown overlay={languageMenu} trigger={['click']}>
-                    <Button className="ant-dropdown-link" onClick={e => e.preventDefault()} style={{ width: isMobile ? 80 : 'auto', height: isMobile ? 30 : 'auto' }}>
-                        {t('lang')} {!isMobile && <DownOutlined />}
-                    </Button>
+                <button type="button" onClick={toggleTheme} className="headerIconButton" aria-label="Toggle color theme" title="Toggle color theme">
+                    <img src={themeLogo} alt="" className="changeButton" />
+                </button>
+                <Dropdown overlay={languageMenu} overlayClassName="languageDropdown" trigger={['click']}>
+                    <button type="button" className="headerIconButton" aria-label={`${t('lang')}: ${currentLanguage.label}`} title={currentLanguage.label} aria-haspopup="menu">
+                        <img src={currentLanguage.flag} alt="" className="changeButton" />
+                    </button>
                 </Dropdown>
             </div>
         </div>
