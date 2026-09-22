@@ -6,11 +6,7 @@ import TagList from "../ui/TagList";
 export default function Experience() {
   const { t } = useTranslation();
   return (
-    <section
-      id="experience"
-      aria-labelledby="experience-title"
-      className="experienceSection"
-    >
+    <section id="experience" aria-labelledby="experience-title" className="experienceSection">
       <h2 id="experience-title" className="sectionTitle">
         {t("experience")}
       </h2>

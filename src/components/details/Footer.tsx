@@ -13,7 +13,7 @@ const Footer: React.FC = () => {
   return (
     <AntFooter className="footerContainer">
       <Text className="footerCopyright">
-        © {currentYear} {t("name")}
+        © 2004 — {currentYear} {t("name")}
       </Text>
     </AntFooter>
   );

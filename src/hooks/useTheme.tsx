@@ -1,10 +1,4 @@
-import {
-  createContext,
-  useContext,
-  useEffect,
-  useState,
-  type ReactNode,
-} from "react";
+import {createContext, useContext, useEffect, useState, type ReactNode} from "react";
 
 type Theme = "light" | "dark";
 
@@ -32,7 +26,7 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
     try {
       localStorage.setItem(STORAGE_KEY, theme);
     } catch {
-      // Storage is optional; the current session can still change themes.
+      // storage is optional; the current session can still change themes.
     }
   }, [theme]);
 

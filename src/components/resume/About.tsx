@@ -30,19 +30,11 @@ export default function About() {
         ))}
       </div>
       <div className="copyEmailRow">
-        <button
-          className="actionButton"
-          type="button"
-          onClick={() => copy(profile.email)}
-        >
+        <button className="actionButton" type="button" onClick={() => copy(profile.email)}>
           {t("copyEmail")}
         </button>
         <span role="status">
-          {status === "copied"
-            ? t("copied")
-            : status === "error"
-              ? t("copyFailed")
-              : ""}
+          {status === "copied" ? t("copied") : status === "error" ? t("copyFailed") : ""}
         </span>
       </div>
     </SectionCard>

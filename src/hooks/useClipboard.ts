@@ -23,7 +23,7 @@ export function useClipboard(resetAfter = 3000) {
 
       try {
         await navigator.clipboard.writeText(text);
-        // Ignore stale requests and completions after unmount.
+          // ignore stale requests: a newer copy() call has started since this one began.
         if (currentRequest !== request.current) return;
         setStatus("copied");
         timer.current = setTimeout(() => setStatus("idle"), resetAfter);
