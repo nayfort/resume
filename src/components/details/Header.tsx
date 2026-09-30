@@ -70,23 +70,59 @@ const Header: React.FC = () => {
               items: sectionIds.map((id) => ({
                 key: id,
                 label: (
-                  <a href={`#${id}`} aria-current={activeSection === id ? "location" : undefined}>
+                  <a
+                    href={`#${id}`}
+                    aria-current={activeSection === id ? "location" : undefined}
+                  >
                     {t(id)}
                   </a>
                 ),
               })),
             }}
             overlayClassName="languageDropdown"
-            trigger={["click"]}>
-            <button type="button" className="headerIconButton" aria-label={t("navigation")} title={t("navigation")} aria-haspopup="menu">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" aria-hidden="true">
+            trigger={["click"]}
+          >
+            <button
+              type="button"
+              className="headerIconButton"
+              aria-label={t("navigation")}
+              title={t("navigation")}
+              aria-haspopup="menu"
+            >
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.6"
+                strokeLinecap="round"
+                aria-hidden="true"
+              >
                 <path d="M4 6h16M4 12h16M4 18h16" />
               </svg>
             </button>
           </Dropdown>
         </div>
-        <button type="button" onClick={toggleTheme} className="headerIconButton" aria-label={t("themeLabel")} title={t("themeLabel")}>
-          <svg className="themeIcon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+        <button
+          type="button"
+          onClick={toggleTheme}
+          className="headerIconButton"
+          aria-label={t("themeLabel")}
+          title={t("themeLabel")}
+        >
+          <svg
+            className="themeIcon"
+            width="22"
+            height="22"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="1.6"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            aria-hidden="true"
+          >
             {theme === "dark" ? (
               <>
                 <circle cx="12" cy="12" r="4" />
@@ -97,8 +133,18 @@ const Header: React.FC = () => {
             )}
           </svg>
         </button>
-        <Dropdown menu={languageMenu} overlayClassName="languageDropdown" trigger={["click"]}>
-          <button type="button" className="headerIconButton" aria-label={`${t("lang")}: ${currentLanguage.label}`} title={currentLanguage.label} aria-haspopup="menu">
+        <Dropdown
+          menu={languageMenu}
+          overlayClassName="languageDropdown"
+          trigger={["click"]}
+        >
+          <button
+            type="button"
+            className="headerIconButton"
+            aria-label={`${t("lang")}: ${currentLanguage.label}`}
+            title={currentLanguage.label}
+            aria-haspopup="menu"
+          >
             <img src={currentLanguage.flag} alt="" className="changeButton" />
           </button>
         </Dropdown>

@@ -8,14 +8,14 @@ export default function About() {
   const { t } = useTranslation();
   const { copy, status } = useClipboard();
   const links = [
+    { label: "GitHub", text: "github.com/nayfort", href: profile.github },
+    { label: "Telegram", text: "@nayfort", href: profile.telegram },
     { label: t("email"), text: profile.email, href: `mailto:${profile.email}` },
     {
       label: "LinkedIn",
       text: "linkedin.com/in/nayfort",
       href: profile.linkedin,
     },
-    { label: "GitHub", text: "github.com/nayfort", href: profile.github },
-    { label: "Telegram", text: "@nayfort", href: profile.telegram },
   ];
   return (
     <SectionCard id="contacts" title={t("contacts")} className="aboutCard">
@@ -30,11 +30,19 @@ export default function About() {
         ))}
       </div>
       <div className="copyEmailRow">
-        <button className="actionButton" type="button" onClick={() => copy(profile.email)}>
+        <button
+          className="actionButton"
+          type="button"
+          onClick={() => copy(profile.email)}
+        >
           {t("copyEmail")}
         </button>
         <span role="status">
-          {status === "copied" ? t("copied") : status === "error" ? t("copyFailed") : ""}
+          {status === "copied"
+            ? t("copied")
+            : status === "error"
+              ? t("copyFailed")
+              : ""}
         </span>
       </div>
     </SectionCard>

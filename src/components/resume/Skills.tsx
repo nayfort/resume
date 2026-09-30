@@ -9,7 +9,10 @@ export default function Skills() {
     <SectionCard id="skills" title={t("skills")} className="skillsCard">
       <div className="skillsGrid">
         {skillGroups.map(([key, skills]) => (
-          <div key={key} className={key === "core" ? "skillGroup coreSkills" : "skillGroup"}>
+          <div
+            key={key}
+            className={key === "core" ? "skillGroup coreSkills" : "skillGroup"}
+          >
             <h3>{t(`skillGroups.${key}`)}</h3>
             <TagList items={skills} />
           </div>

@@ -5,7 +5,11 @@ import SectionCard from "../ui/SectionCard";
 export default function Education() {
   const { t } = useTranslation();
   return (
-    <SectionCard id="education" title={t("education")} className="educationCard">
+    <SectionCard
+      id="education"
+      title={t("education")}
+      className="educationCard"
+    >
       <div className="educationEntry">
         <span className="jobDates">2023 — 2027 · {t("expected")}</span>
         <h3>

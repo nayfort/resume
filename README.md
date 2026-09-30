@@ -29,6 +29,8 @@ instead of a static PDF — with theming, i18n, and a component-driven architect
 
 ## 🚀 Getting Started
 
+Requires Node.js 20.19+ on the 20.x release line, or Node.js 22.12+.
+
 1. **Clone the repository:**
 
 ```bash

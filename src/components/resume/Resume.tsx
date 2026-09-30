@@ -27,7 +27,13 @@ const Resume: React.FC = () => {
         <Card className="headerCvComponent" id="hero">
           <Row gutter={[28, 24]} align="middle">
             <Col>
-              <img src={Photo} alt={t("name")} width={120} height={120} className="cvLogo"/>
+              <img
+                src={Photo}
+                alt={t("name")}
+                width={120}
+                height={120}
+                className="cvLogo"
+              />
             </Col>
             <Col flex="1" className="heroCopy">
               <p className="heroEyebrow">{"<HelloWorld />"}</p>
@@ -42,13 +48,23 @@ const Resume: React.FC = () => {
                 {t("location")}
               </Typography.Paragraph>
               <div className="heroActions">
-                <ExternalLink className="actionButton primaryAction" href={`mailto:${profile.email}`}>
+                <ExternalLink
+                  className="actionButton primaryAction"
+                  href={`mailto:${profile.email}`}
+                >
                   {t("contactAction")} <span aria-hidden="true">↗</span>
                 </ExternalLink>
                 <ExternalLink className="actionButton" href={profile.github}>
                   GitHub <span aria-hidden="true">↗</span>
                 </ExternalLink>
-                <button className="actionButton" type="button" onClick={() => window.print()}>
+                <ExternalLink className="actionButton" href={profile.linkedin}>
+                  LinkedIn <span aria-hidden="true">↗</span>
+                </ExternalLink>
+                <button
+                  className="actionButton"
+                  type="button"
+                  onClick={() => window.print()}
+                >
                   {t("printAction")}
                 </button>
               </div>
@@ -63,7 +79,12 @@ const Resume: React.FC = () => {
         <About />
       </div>
       {showBackToTop && (
-        <a href="#hero" className="backToTop" aria-label={t("backToTop")} title={t("backToTop")}>
+        <a
+          href="#hero"
+          className="backToTop"
+          aria-label={t("backToTop")}
+          title={t("backToTop")}
+        >
           <span aria-hidden="true">↑</span>
         </a>
       )}
